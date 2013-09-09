@@ -1,0 +1,25 @@
+$project-icon-size: 128px;
+$project-border-size: 4px;
+
+.project {
+    @extend .col;
+    float: none;
+    display: inline-block;
+    margin-bottom: 20px;
+    vertical-align: top;
+    .cover {
+        img {
+            height: 128px;
+            width: 100%;
+        }
+    }
+    p {
+        @include no-space();
+    }
+    @media all and (min-width: $size-mobile) {
+        @include col(6);
+    }
+    @media all and (min-width: $size-tablet) {
+        @include col(4);
+    }
+}

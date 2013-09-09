@@ -1,0 +1,36 @@
+a {
+    color: $c-link;
+    text-decoration: none;
+    &:hover {
+        color: $c-link-h;
+        text-decoration: underline;
+    }
+}
+
+body {
+    background: url(#{$dir-img}/main-bg.jpg);
+    @include vendor-prefix(background-size, cover);
+    @include font-size(1.8);
+    font-family: roboto;
+}
+
+h1 {
+    @include font-size(3.5);
+    margin-top: 20px;
+}
+
+h2 {
+    border-bottom: 2px solid $c-link;
+    clear: both;
+    @include font-size(3);
+    margin-bottom: 20px;
+}
+
+h3 {
+    @include font-size(2);
+}
+
+#wrapper {
+    margin: auto;
+    max-width: $size-desktop;
+}

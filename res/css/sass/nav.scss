@@ -1,0 +1,49 @@
+nav {
+    padding: ($avatar-small-size / 2) 0 0 0;
+    position: relative;
+
+    &:after {
+        @extend .group;
+    }
+
+    #magic-line {
+        background: darken($c-link, 30%);
+    }
+
+    ul {
+        overflow: hidden;
+        @include no-space();
+        li {
+            list-style: none;
+            a {
+                display: block;
+                @include font-size(2.2);
+                padding: 10px 10px;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    @media all and (min-width: $size-mobile) {
+        display: table;
+        margin: 0 auto;
+        ul {
+            li {
+                display: inline;
+            }
+            display: block;
+            float: right;
+        }
+        a {
+            float: left;
+        }
+    }
+
+    @media all and (min-width: $size-tablet) {
+        display: block;
+        margin: 0;
+        padding: 30px 40px 0 0;
+    }
+}

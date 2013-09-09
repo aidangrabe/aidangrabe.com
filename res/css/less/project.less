@@ -1,0 +1,24 @@
+@project-icon-size: 128px;
+@project-border-size: 4px;
+
+.project:extend(.col) {
+    h2 {
+        .font-size(2);
+    }
+    .cover {
+        img {
+            height: 128px;
+            width: 100%;
+        }
+    }
+    @media all and (min-width: @size-mobile) {
+        .col(6);
+    }
+    @media all and (min-width: @size-tablet) {
+        .col(4);
+    }
+}
+
+.project-row {
+    &:extend(.row);
+}

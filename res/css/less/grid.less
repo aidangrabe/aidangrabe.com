@@ -1,0 +1,29 @@
+/**
+ * DEPENDANCIES:
+ *  vendor.less
+ */
+
+@grid-collapse: @size-mobile;
+@grid-cols: 12;
+@grid-gutter: 10px;
+
+.col {
+    .box-sizing(border-box);
+    padding: 0 @grid-gutter;
+    float: left;
+}
+
+.col(@s) {
+    @percent: (@s / @grid-cols * 100);
+    width: ~"@{percent}%";
+    //@media all and (min-width: @grid-collapse) {
+    //    width: ~"@{percent}%";
+    //}
+}
+
+.row {
+    overflow: hidden;
+    &:after {
+       //&:extend(.group);
+    }
+}

@@ -1,0 +1,20 @@
+$grid-collapse: $size-mobile;
+$grid-cols: 12;
+$grid-gutter: 10px;
+
+.col {
+    @include vendor-prefix(box-sizing, border-box);
+    padding: 0 $grid-gutter;
+    float: left;
+}
+
+@mixin col($s) {
+    width: percentage($s / $grid-cols);
+}
+
+.row {
+    overflow: hidden;
+    &:after {
+       //&:extend(.group);
+    }
+}

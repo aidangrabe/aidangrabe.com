@@ -1,0 +1,60 @@
+@icon-file: "@{dir-img}/icons.png";
+@icon-size: 60px;
+
+/**
+ * outputs a social icon on a certain row of the icon image.
+ * also outputs a hover image for the social button which uses the second
+ * icon on the current row
+ * @param row the row for the icon
+ */
+.social-icon(@row) {
+    @r: (@row - 1);
+    background: url(@icon-file) 0 -(@r * @icon-size);
+    &:hover {
+        background: url(@icon-file) @icon-size -(@r * @icon-size);
+    }
+}
+
+// the social icons bar
+.social-icons {
+    display: table;
+    margin: 0 auto 40px auto;
+    overflow: hidden;
+
+    // each social icon
+    .social {
+        cursor: pointer;
+        float: left;
+        height: @icon-size;
+        margin: 0 10px 0 10px;
+        text-decoration: none;  // IE
+        width: @icon-size;
+    }
+
+    .twitter {
+        .social-icon(1);
+    }
+
+    .linkedin {
+        .social-icon(2);
+    }
+
+    .google {
+        .social-icon(3);
+    }
+
+    .github {
+        .social-icon(4);
+    }
+
+    @media all and (min-width: @size-tablet) {
+        display: block;
+        float: right;
+        margin: 0;
+
+        .social {
+            margin: 0 0 0 20px;
+        }
+    }
+}
+

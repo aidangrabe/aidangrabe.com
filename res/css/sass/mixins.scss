@@ -1,0 +1,25 @@
+/**
+ * courtesy of css-tricks.com
+ */
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+@mixin no-space() {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin size($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+@mixin vendor-prefix($property, $values...) {
+    $VENDORS: webkit, moz, ms, o;
+    @each $vendor in $VENDORS {
+        -#{$vendor}-#{$property}: $values;
+    }
+    #{$property}: $values;
+}
