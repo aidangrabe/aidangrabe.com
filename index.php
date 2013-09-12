@@ -1,18 +1,20 @@
 <?php
 
-require 'src/ClassLoader.php';
-
-use 
-    controller\FrontController,
-    model\App;
-
-$classLoader = new ClassLoader();
-$classLoader->register();
+require "src/App.php";
+require "dbconf.php";
 
 App::setRoot("/aidan");
-//App::setPath();
+App::setResourcePath("/res");
+App::setIncludePath(__FILE__, "/src");
+//set_include_path(App::getIncludePath());
 
-$frontController = new FrontController();
-$frontController->run();
+$router = new Router(App::getRoot(),
+    App::joinPaths(App::getIncludePath(), "pages"));
 
+$router->defRoute("home", "IndexPage");
+$router->addRoute("projects", "ProjectsPage");
+$router->addRoute("portfolio", "PortfolioPage");
+$router->addRoute("links", "LinksPage");
+
+$router->run();
 ?>

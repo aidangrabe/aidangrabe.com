@@ -3,8 +3,8 @@
 <html lang="en">
 
 <head>
-    <title></title>
-    <link rel="stylesheet" href="res/css/main.css" />
+    <title><?php echo $title; ?></title>
+    <link rel="stylesheet" href="<?php echo App::getResource("/css/main.css"); ;?>" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
@@ -29,28 +29,8 @@
         </header>
 
         <section id="main-body">
-            <nav id="main-nav">
-                <ul>
-                    <li><a href="#" class="sel">Home</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Links</a></li>
-                </ul>
-            </nav>
-            <section id="main-content">
-
-                <h1>Personal</h1>
-                <ul>
-                    <li><a href="">CV/Resume</a></li>
-                </ul>
-
-                <h1>Credits:</h1>
-                <ul>
-                    <li>Social icons based on <a href="#">Github Link</a></li>
-                    <li>Background by <a href="#">link</a></li>
-                </ul>
-
-            </section> <!-- #main-content -->
+            <?php echo $nav; ?>
+            <section id="main-content"><?php echo $content; ?></section> <!-- #main-content -->
         </section> <!-- #main-body -->
 
         <footer>
@@ -59,9 +39,7 @@
 
     </div> <!-- #wrapper -->
 
-    <script src="/lib/js/jquery/jquery-2.js"></script>
-    <script src="/lib/js/jmedia/jmedia.js"></script>
-    <script src="res/js/main.js"></script>
+    <script src="<?php echo App::getResource("/js/main.js"); ?>"></script>
 </body>
 
 </html>

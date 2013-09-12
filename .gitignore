@@ -1,0 +1,8 @@
+# FILES
+dbconf.php
+
+## SWAP FILES
+*.swp
+
+# FOLDERS
+src/sql
