@@ -34,7 +34,7 @@
         </section> <!-- #main-body -->
 
         <footer>
-            This is the footer
+            <?php echo new Template("Footer"); ?>
         </footer>
 
     </div> <!-- #wrapper -->
