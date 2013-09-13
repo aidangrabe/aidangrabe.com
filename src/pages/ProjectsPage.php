@@ -53,7 +53,10 @@ class ProjectsPage extends Page {
             $res = $db->query($sql);
             $row = $res->fetch_assoc();
 
-            $template = new Template("Project", new Project($row));
+            $project = new Project($row);
+            $template = new Template("Project", array(
+                "name" => $project->getName()
+            ));
 
             break;
         }

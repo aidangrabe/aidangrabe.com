@@ -14,6 +14,11 @@ class Template {
         $this->data = $data;
     }
 
+    public function __get($prop) {
+        // TODO log error or something?
+        return "";
+    }
+
     public function set() {
         $args = func_get_args();
         switch (count($args)) {
