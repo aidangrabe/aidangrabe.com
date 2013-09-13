@@ -217,8 +217,18 @@ footer {
   margin-bottom: 20px;
   vertical-align: top; }
   .project .cover img {
-    height: 128px;
+    border: 1px solid #DDD;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    max-height: 100%;
+    padding: 6px;
     width: 100%; }
+    .project .cover img:hover {
+      border-color: #b2376e;
+      background: #f6e3eb; }
   .project p {
     margin: 0;
     padding: 0; }
@@ -227,4 +237,6 @@ footer {
       width: 50%; } }
   @media all and (min-width: 800px) {
     .project {
-      width: 33.33333%; } }
+      width: 33.33333%; }
+      .project .cover img {
+        height: 128px; } }

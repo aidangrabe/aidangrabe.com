@@ -9,7 +9,14 @@ $project-border-size: 4px;
     vertical-align: top;
     .cover {
         img {
-            height: 128px;
+            &:hover {
+                border-color: $c-link;
+                background: lighten($c-link, 47%);
+            }
+            border: 1px solid #DDD;
+            @include vendor-prefix(border-radius, 3px);
+            max-height: 100%;
+            padding: 6px;
             width: 100%;
         }
     }
@@ -21,5 +28,10 @@ $project-border-size: 4px;
     }
     @media all and (min-width: $size-tablet) {
         @include col(4);
+        .cover {
+            img {
+                height: 128px;
+            }
+        }
     }
 }

@@ -1,8 +1,9 @@
 # FILES
 dbconf.php
 
-## SWAP FILES
+## SWAP / TEMP FILES
 *.swp
+res/css/sass/.sass-cache
 
 # FOLDERS
 src/sql
