@@ -6,12 +6,7 @@ class Page {
 
     public function __construct($page, $title) {
 
-        $links = array( 
-            "Home" => '',
-            "Projects" => "projects",
-            "Portfolio" => "portfolio",
-            "Links" => "links"
-        );
+        $links = App::get("nav");
         foreach ($links as $label => $link) {
             $links[$label] = App::joinPaths(
                 App::getRoot(), $link);
