@@ -1,5 +1,7 @@
 <?php
 
+define("ROOT", "/");
+
 class DBconf {
     
     const HOST = "host";
