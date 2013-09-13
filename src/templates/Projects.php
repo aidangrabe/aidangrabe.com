@@ -9,15 +9,15 @@
         <?php foreach ($projects as $project): ?>
             <article class="project">
                 <div class="cover">
-                    <a href="<?php echo $project['link']; ?>"><!--
-                    --><img src="<?php echo $project['image']; ?>" /><!--
+                    <a href="<?php echo $project->getLink(); ?>"><!--
+                    --><img src="<?php echo $project->getImage(); ?>" /><!--
                     --></a>
                 </div>
-                <a href="<?php echo $project['link']; ?>">
-                    <h3><?php echo $project['name']; ?></h3>
+                <a href="<?php echo $project->getLink(); ?>">
+                    <h3><?php echo $project->getName(); ?></h3>
                 </a>
                 <p>
-                    <?php echo $project['description']; ?>
+                    <?php echo $project->getDescription(); ?>
                 </p>
             </article>
         <?php endforeach; ?>

@@ -35,13 +35,7 @@ class ProjectsPage extends Page {
                     $languages[$row['lang']] = array();
                 }
                 // add this project to the array of this language
-                $languages[$row['lang']][] = array(
-                    "name" => $row['name'],
-                    "description" => $row['description'],
-                    "image" => $row['image'],
-                    "link" => App::joinPaths("projects",
-                        $row['lang'], $row['name'])
-                );
+                $languages[$row['lang']][] = new Project($row);
             }
 
             $template = new Template("Projects", array(
@@ -58,9 +52,8 @@ class ProjectsPage extends Page {
             ";
             $res = $db->query($sql);
             $row = $res->fetch_assoc();
-            $row['image'] = App::getResource($row['image']);
 
-            $template = new Template("Project", $row);
+            $template = new Template("Project", new Project($row));
 
             break;
         }
