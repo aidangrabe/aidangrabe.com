@@ -1,10 +1,22 @@
 <h1>Projects</h1> 
 <article>
-    <p>Welcome to the projects page! Lah de dah!</p>
+    <p>
+        Listed below are some of the projects I have been working on
+        over the past few years. These may include both College and personal
+        projects, divided up by language.
+    </p>
+    <p>
+        Languages:
+        <ul class="project-languages">
+            <?php foreach ($languages as $lang => $p): ?>
+            <li><a href="#<?php echo $lang; ?>"><?php echo $lang; ?></a></li>
+            <?php endforeach; ?>
+        </ul>
+    </p>
 </article>
 
 <?php foreach ($languages as $lang => $projects): ?>
-    <h2><?php echo $lang; ?></h2>
+    <h2 id="<?php echo $lang; ?>"><?php echo $lang; ?></h2>
     <section class="project-group">
         <?php foreach ($projects as $project): ?>
             <article class="project">
