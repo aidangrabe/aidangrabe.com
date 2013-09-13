@@ -11,7 +11,9 @@ App::setIncludePath(__FILE__, "/src");
 $router = new Router(App::getRoot(),
     App::joinPaths(App::getIncludePath(), "pages"));
 
-$router->defRoute("home", "IndexPage");
+$router->defRoute("404", "_404Page");
+$router->addRoute("", "IndexPage");
+$router->addRoute("home", "IndexPage");
 $router->addRoute("projects", "ProjectsPage");
 $router->addRoute("portfolio", "PortfolioPage");
 $router->addRoute("links", "LinksPage");
