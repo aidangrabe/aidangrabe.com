@@ -29,7 +29,7 @@
                     <h3><?php echo $project->getName(); ?></h3>
                 </a>
                 <p>
-                    <?php echo $project->getDescription(); ?>
+                    <?php echo $project->getDescription(130); ?>
                 </p>
             </article>
         <?php endforeach; ?>

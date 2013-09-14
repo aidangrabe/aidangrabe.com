@@ -55,7 +55,9 @@ class ProjectsPage extends Page {
 
             $project = new Project($row);
             $template = new Template("Project", array(
-                "name" => $project->getName()
+                "name" => $project->getName(),
+                "description" => $project->getDescription(),
+                "image" => $project->getImage()
             ));
 
             break;

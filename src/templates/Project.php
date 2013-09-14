@@ -1,5 +1,7 @@
 <h1><?php echo $name; ?></h1>
 
 <article>
-    <?php echo $description; ?>
+    <p>
+        <?php echo $description; ?>
+    </p>
 </article>

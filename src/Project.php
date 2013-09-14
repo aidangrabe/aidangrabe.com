@@ -19,8 +19,19 @@ class Project {
         $this->link = App::joinPaths("projects", $row['lang'], $row['name']);
     }
 
-    public function getDescription() {
-        return $this->description;
+    public function getDescription($charLimit = 0) {
+        $desc = preg_replace("/\<br \/\>\s+\<br \/\>/", "</p><p>", 
+                nl2br($this->description));
+        if ($charLimit > 0) {
+            $desc = strip_tags($desc);
+            $strippedLength = strlen($desc);
+            if ($strippedLength > $charLimit) {
+                $desc = substr($desc, 0, $charLimit);
+                $desc = substr($desc, 0, strrpos($desc, " "));
+                if (strlen($desc) < $strippedLength) $desc .= "...";
+            }
+        }
+        return $desc;
     }
 
     public function getImage() {

@@ -1,4 +1,4 @@
 <h1>Links</h1>
 <ul>
-    <li><a href="#">Test Link</a></li>
+    <li><a href="#">Curriculum Vitae (Résumé)</a></li>
 </ul>
