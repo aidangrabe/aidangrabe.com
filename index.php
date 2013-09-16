@@ -25,6 +25,8 @@ foreach ($nav as $label => $link) {
     if ($link == "") $link = "index";
     $router->addRoute($link, ucfirst($link) . "Page");
 }
+$router->addRoute("cv", "ResumePage");
+$router->addRoute("resume", "ResumePage");
 
 $router->run();
 ?>
