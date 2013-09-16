@@ -3,6 +3,7 @@
 class ProjectsPage extends Page {
 
     const NAME = "PROJECTS";
+    const TABLE_NAME = "projects";
 
     public function __construct() {
         parent::__construct(self::NAME, "Projects");
@@ -22,7 +23,7 @@ class ProjectsPage extends Page {
             // show all the Projects
             $sql = "
                 SELECT *
-                FROM projects
+                FROM " . self::getProjectsTableName() . "
                 ORDER BY lang
             ";
             $res = $db->query($sql);
@@ -48,7 +49,9 @@ class ProjectsPage extends Page {
             $lang = $db->escape($args[0]);
             $name = $db->escape($args[1]);
             $sql = "
-                SELECT * FROM projects WHERE name='{$name}' AND lang='{$lang}'
+                SELECT *
+                FROM " . self::getProjectsTableName() . "
+                WHERE name='{$name}' AND lang='{$lang}'
             ";
             $res = $db->query($sql);
             $row = $res->fetch_assoc();
@@ -65,6 +68,10 @@ class ProjectsPage extends Page {
 
         $this->setContent($template);
         $this->output();
+    }
+
+    public static function getProjectsTableName() {
+        return DBconf::TABLE_PREFIX . self::TABLE_NAME;
     }
 
 }
