@@ -9,6 +9,8 @@ class DBconf {
     const PASS = "password";
     const USER = "user";
 
+    const TABLE_PREFIX = "";
+
 }
 
 ?>
