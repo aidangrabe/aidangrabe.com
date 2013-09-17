@@ -5,14 +5,14 @@
         over the past few years. These may include both College and personal
         projects, divided up by language.
     </p>
-    <p>
+    <div>
         Languages:
         <ul class="project-languages">
             <?php foreach ($languages as $lang => $p): ?>
             <li><a href="#<?php echo $lang; ?>"><?php echo $lang; ?></a></li>
             <?php endforeach; ?>
         </ul>
-    </p>
+    </div>
 </article>
 
 <?php foreach ($languages as $lang => $projects): ?>

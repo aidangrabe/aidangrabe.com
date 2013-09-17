@@ -38,7 +38,7 @@ a {
     text-decoration: underline; }
 
 body {
-  background: url(../img/site/main-bg.jpg);
+  background: url(../img/site/main-bg.jpg) center top fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
@@ -58,7 +58,8 @@ h2 {
   clear: both;
   font-size: 30px;
   font-size: 3rem;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  padding-bottom: 4px; }
 
 h3 {
   font-size: 20px;
@@ -240,6 +241,11 @@ footer {
       width: 33.33333%; }
       .project .cover img {
         height: 128px; } }
+
+.project-languages {
+  list-style: none;
+  padding: 0 0 0 10px;
+  margin: 0 0 20px 0; }
 
 #resume h1, #resume h2 {
   clear: both; }
