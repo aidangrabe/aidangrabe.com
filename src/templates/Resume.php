@@ -5,17 +5,17 @@ AidanGrabe.com  </p>
 <h1>Aidan Grabe</h1>
 <h2>Education</h2>
 <h3>University College Cork  2011 - present</h3>
-<p>Student in Computer Science (CK401 BSc)
-2nd Year: 80% overall, including:
-    Software Development: 81%
-Logic Design: 93%
-Algorithms and Linear Data Structures: 82%
-Web Servers: 92%
-Network Computing: 71%
-1st Year: 85% overall, including:
-    Foundations of Computer Science: 90%
-Programming and Web Development: 92%
-Introductory Mathematics &amp; Applied Mathematics: 86%</p>
+<p>Student in Computer Science (CK401 BSc)<br />
+2nd Year: 80% overall, including:<br />
+    Software Development: 81%<br />
+Logic Design: 93%<br />
+Algorithms and Linear Data Structures: 82%<br />
+Web Servers: 92%<br />
+Network Computing: 71%<br />
+1st Year: 85% overall, including:<br />
+    Foundations of Computer Science: 90%<br />
+Programming and Web Development: 92%<br />
+Introductory Mathematics &amp; Applied Mathematics: 86%  </p>
 <h3>Coláiste Choilm Secondary School, Ballincollig 2004 - 2010</h3>
 <p>Achieved 545 points  in the leaving Certificate</p>
 <h3>Kerry Pike National School 1997-2003</h3>
