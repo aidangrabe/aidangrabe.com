@@ -1,8 +1,4 @@
-<p>Ti Bergen, Woodside, Kerry Pike, Co. Cork, Ireland<br />
-+353 85 7027 121<br />
-aidan.grabe@gmail.com<br />
-AidanGrabe.com  </p>
-<h1>Aidan Grabe</h1>
+<article id="resume"><h1>Aidan Grabe</h1>
 <h2>Education</h2>
 <h3>University College Cork  2011 - present</h3>
 <p>Student in Computer Science (CK401 BSc)<br />
@@ -46,12 +42,12 @@ Introductory Mathematics &amp; Applied Mathematics: 86%  </p>
 <li>Won a €150 discount from Irish College - Coláiste Na nOileán3 in Connemara for speaking the most Irish in the college over one week on the 2010 cúrsa B.</li>
 </ul>
 <h2>Computer Skills</h2>
-<p>PHP, Java, HTML5, CSS, SQL, Git, Ant, Python, Android APKtool, XML, Javascript, JQuery, Bash, Shell
-I have worked with open source software packages such as phpBB, SMF and Wordpress, integrating them into my own website.
-I am comfortable on the command line in both Windows and Unix environments, and use Linux daily at home.
-Hobbies &amp; Interests
-Driving - Full driver’s license
-Swimming - Avid swimmer. Swim lengths 2-3 times a week. Was qualified lifesaver.
-Web Design - Enjoy the design aspect to Web development. Subscriber to many CSS design weblogs, and practise my own designs regularly.
-Languages - Bilingual French/English
-References - Available upon request</p>
+<p>PHP, Java, HTML5, CSS, SQL, Git, Ant, Python, Android APKtool, XML, Javascript, JQuery, Bash, Shell<br />
+I have worked with open source software packages such as phpBB, SMF and Wordpress, integrating them into my own website.<br />
+I am comfortable on the command line in both Windows and Unix environments, and use Linux daily at home.</p>
+<h2>Hobbies &amp; Interests</h2>
+<p>Driving - Full driver’s license<br />
+Swimming - Avid swimmer. Swim lengths 2-3 times a week. Was qualified lifesaver.<br />
+Web Design - Enjoy the design aspect to Web development. Subscriber to many CSS design weblogs, and practise my own designs regularly.<br />
+Languages - Bilingual French/English<br />
+References - Available upon request  </p></article>

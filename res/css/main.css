@@ -240,3 +240,10 @@ footer {
       width: 33.33333%; }
       .project .cover img {
         height: 128px; } }
+
+#resume h1, #resume h2 {
+  clear: both; }
+#resume h1 {
+  margin: 20px 0; }
+#resume p, #resume ul {
+  margin-left: 10%; }
