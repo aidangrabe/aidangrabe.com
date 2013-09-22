@@ -166,7 +166,8 @@ footer {
   font-size: 14px;
   font-size: 1.4rem;
   margin: 20px 0;
-  padding: 20px; }
+  padding: 20px;
+  text-align: center; }
   @media all and (min-width: 800px) {
     footer {
       padding: 20px 40px; } }
@@ -246,6 +247,12 @@ footer {
   list-style: none;
   padding: 0 0 0 10px;
   margin: 0 0 20px 0; }
+
+.portfolio img {
+  border: 1px solid #3d1326;
+  display: block;
+  margin: 20px auto;
+  max-width: 100%; }
 
 #resume h1, #resume h2 {
   clear: both; }

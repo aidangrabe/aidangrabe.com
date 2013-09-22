@@ -4,6 +4,7 @@ footer {
     @include font-size(1.4);
     margin: 20px 0;
     padding: 20px;
+    text-align: center;
 
     @media all and (min-width: $size-tablet) {
         padding: 20px 40px;
