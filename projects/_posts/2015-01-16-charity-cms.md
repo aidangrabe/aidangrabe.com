@@ -2,6 +2,8 @@
 layout: default
 title: "Charity CMS"
 category: "projects"
+image: "/res/img/projects/charity-cms/dashboard.png"
+github_link: "https://github.com/aidangrabe/charity-cms"
 ---
 
 # Charity-CMS
