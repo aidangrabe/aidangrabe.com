@@ -1,0 +1,45 @@
+$project-icon-size: 128px;
+$project-border-size: 4px;
+
+.project {
+    @extend .col;
+    float: none;
+    display: inline-block;
+    margin-bottom: 20px;
+    vertical-align: top;
+    .cover {
+        img {
+            &:hover {
+                border-color: $c-link;
+                background: lighten($c-link, 47%);
+            }
+            border: 1px solid #DDD;
+            @include vendor-prefix(border-radius, 3px);
+            @include vendor-prefix(box-sizing, border-box);
+            max-height: 100%;
+            padding: 6px;
+            width: 100%;
+        }
+    }
+    p {
+        @include no-space();
+    }
+    @media all and (min-width: $size-mobile) {
+        @include col(6);
+    }
+    @media all and (min-width: $size-tablet) {
+        @include col(4);
+        @include font-size(1.4);
+        .cover {
+            img {
+                height: 128px;
+            }
+        }
+    }
+}
+
+.project-languages {
+    list-style: none;
+    padding: 0 0 0 10px;
+    margin: 0 0 20px 0;
+}

@@ -1,0 +1,12 @@
+# Site settings
+title: AidanGrabe.com
+email: aidan.grabe@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+    4th year Computer Science student at UCC Ireland.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://aidangrabe.com" # the base hostname & protocol for your site
+twitter_username: aidangrabe
+github_username:  aidangrabe
+
+# Build settings
+markdown: kramdown

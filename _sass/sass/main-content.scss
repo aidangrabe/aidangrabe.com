@@ -1,0 +1,15 @@
+#main-body {
+    background: white;
+}
+
+#main-content {
+    &:after {
+        @extend .group;
+    }
+    padding: 40px 20px;
+    line-height: 170%;
+
+    @media all and (min-width: $size-tablet) {
+        padding: 40px 80px;
+    }
+}
