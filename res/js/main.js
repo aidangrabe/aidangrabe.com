@@ -1,4 +1,4 @@
-
+// build:  Fri Jan 23 00:21:50 GMT 2015
 /*! jQuery v2.0.3 | (c) 2005, 2013 jQuery Foundation, Inc. | jquery.org/license
 //@ sourceMappingURL=jquery-2.0.3.min.map
 */
@@ -107,6 +107,7 @@
         window.onresize();
     });
 })(jQuery);
+
 var MagicLine = function(owner) {
     var $owner = $(owner);
     var $owner_ul = $(owner + " ul");
@@ -141,10 +142,23 @@ var MagicLine = function(owner) {
 };
 $(document).ready(function() {
     var magicLine = new MagicLine("#main-nav");
+    var url = document.location.pathname;
 
     // media queries
     window.jmedia.addBreakPoint('mobile', 480);
     window.jmedia.addBreakPoint('tablet', 800);
+
+    // set the selected link
+    $("#main-nav a").each(function() {
+        var $this = $(this);
+        var linkText = $this.text();
+
+        if ((url == "/" && linkText.toLowerCase() == "home")
+                || url.indexOf(linkText.toLowerCase()) > -1 ) {
+            $this.addClass("sel");
+            return;
+        }
+    });
 
     $("#main-nav a").mouseover(function() {
         magicLine.toLink(this);

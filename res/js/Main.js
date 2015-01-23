@@ -1,9 +1,22 @@
 $(document).ready(function() {
     var magicLine = new MagicLine("#main-nav");
+    var url = document.location.pathname;
 
     // media queries
     window.jmedia.addBreakPoint('mobile', 480);
     window.jmedia.addBreakPoint('tablet', 800);
+
+    // set the selected link
+    $("#main-nav a").each(function() {
+        var $this = $(this);
+        var linkText = $this.text();
+
+        if ((url == "/" && linkText.toLowerCase() == "home")
+                || url.indexOf(linkText.toLowerCase()) > -1 ) {
+            $this.addClass("sel");
+            return;
+        }
+    });
 
     $("#main-nav a").mouseover(function() {
         magicLine.toLink(this);
