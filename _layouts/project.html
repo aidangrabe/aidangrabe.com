@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<div>
+
+    <h1 class="project-title">{{ page.title }}</h1>
+    <p class="project-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+
+  <article class="project-content">
+    {{ content }}
+
+    {% if page.github %}
+
+        <a href="{{ page.github }}">Github</a>
+
+    {% endif %}
+
+  </article>
+
+</div>
