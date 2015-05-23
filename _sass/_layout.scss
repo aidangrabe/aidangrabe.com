@@ -169,7 +169,7 @@ $project-border-size: 4px;
 .project {
 
     padding: 10px;
-    flex: 0 0 33%;
+    flex: 0 1 100%;
 
     .cover {
         img {
@@ -190,9 +190,6 @@ $project-border-size: 4px;
 
     p {
         @include no-space();
-    }
-    @media all and (min-width: $size-mobile) {
-        flex: 0 1 100%;
     }
     @media all and (min-width: $size-tablet) {
         @include font-size(1.4);
