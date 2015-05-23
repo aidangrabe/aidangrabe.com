@@ -155,10 +155,11 @@ $project-border-size: 4px;
 .projects {
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: stretch;
+    align-content: flex-start;
 
     & * {
         box-sizing: border-box;
@@ -196,7 +197,7 @@ $project-border-size: 4px;
         flex: 0 1 50%;
     }
     @media all and (min-width: $size-desktop) {
-        flex: 1 0 30%;
+        flex: 0 0 30%;
     }
     &:before {
         padding: 10px;

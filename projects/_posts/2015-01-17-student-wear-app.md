@@ -1,6 +1,7 @@
 ---
 title: Student Wear App
 category: projects
+section: android-wear
 image: https://raw.githubusercontent.com/aidangrabe/calendar-watchface/master/wear/src/main/res/drawable-mdpi/watchface_square_preview.png
 layout: default
 ---
