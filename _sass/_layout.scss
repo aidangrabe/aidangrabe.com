@@ -155,7 +155,7 @@ $project-border-size: 4px;
 .projects {
 
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: stretch;
@@ -199,9 +199,12 @@ $project-border-size: 4px;
     @media all and (min-width: $size-desktop) {
         flex: 0 0 30%;
     }
-    &:before {
-        padding: 10px;
+
+    .card:hover {
+        box-shadow: 0 2px 25px #777;
+        cursor: pointer;
     }
+
 }
 
 .project-languages {
