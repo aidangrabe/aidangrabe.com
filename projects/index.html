@@ -3,24 +3,24 @@ layout: default
 title: "Projects"
 ---
 
-<div class="projects">
+<h1>Projects</h1>
 
-    <h1>Projects</h1>
+<div class="projects">
 
     {% for post in site.posts %}
         
-        {% if post.category contains "projects" %}
-
             <div class="project">
-                <div class="cover">
-                {% if post.image %}
-                <a href="{{ post.url }}"><img src="{{ post.image }}" /></a>
-                {% endif %}
-                </div> <!-- .cover -->
-                <a href="{{ post.url }}">{{ post.title }}</a>
-            </div>
 
-        {% endif %}
+                <div class="card">
+                    <div class="cover">
+                    {% if post.image %}
+                    <a href="{{ post.url }}"><img src="{{ post.image }}" /></a>
+                    {% endif %}
+                    </div> <!-- .cover -->
+                    <h2 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                </div>
+
+            </div> <!-- .card -->
 
     {% endfor %}
 

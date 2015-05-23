@@ -1,6 +1,13 @@
 $project-icon-size: 128px;
 $project-border-size: 4px;
 
+.projects {
+
+    display: flex;
+    background: red;
+
+}
+
 .project {
     @extend .col;
     float: none;
