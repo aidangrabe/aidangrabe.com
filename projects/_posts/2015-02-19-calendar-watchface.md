@@ -5,6 +5,7 @@ category: projects
 section: android-wear
 image: /res/img/projects/calendar-watchface/thumbnail.png
 github: https://github.com/aidangrabe/calendar-watchface
+googleplay: com.aidangrabe.customwatchface
 ---
 
 Calendar Watchface is a custom watchface for Android Wear that displays your

@@ -3,17 +3,23 @@ layout: default
 ---
 <div>
 
+    <div class="project-badges">
+        {% if page.github %}
+            <a href="{{ page.github }}"><img src="/res/img/github-mark.png" alt="Fork on Github" /></a>
+        {% endif %}
+        {% if page.googleplay %}
+            <a href="https://play.google.com/store/apps/details?id={{ page.googleplay }}">
+              <img alt="Get it on Google Play"
+                     src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png" /></a>
+        {% endif %}
+    </div>
+
     <h1 class="project-title">{{ page.title }}</h1>
     <p class="project-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
 
   <article class="project-content">
+
     {{ content }}
-
-    {% if page.github %}
-
-        <a href="{{ page.github }}">Github</a>
-
-    {% endif %}
 
   </article>
 
