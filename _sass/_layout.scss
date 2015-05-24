@@ -195,6 +195,13 @@ $project-border-size: 4px;
     @media all and (min-width: $size-tablet) {
         @include font-size(1.4);
         flex: 0 1 50%;
+
+        .cover img {
+            
+            max-height: 210px;
+
+        }
+
     }
     @media all and (min-width: $size-desktop) {
         flex: 0 0 30%;
