@@ -1,4 +1,4 @@
-// build:  Fri Jan 23 00:21:50 GMT 2015
+// build:  Sun Jan 3 21:58:51 GMT 2016
 /*! jQuery v2.0.3 | (c) 2005, 2013 jQuery Foundation, Inc. | jquery.org/license
 //@ sourceMappingURL=jquery-2.0.3.min.map
 */
@@ -147,6 +147,9 @@ $(document).ready(function() {
     // media queries
     window.jmedia.addBreakPoint('mobile', 480);
     window.jmedia.addBreakPoint('tablet', 800);
+
+    var $footerDate = document.getElementById('footer-date');
+    $footerDate.innerText = new Date().getFullYear();
 
     // set the selected link
     $("#main-nav a").each(function() {

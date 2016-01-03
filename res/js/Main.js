@@ -6,6 +6,9 @@ $(document).ready(function() {
     window.jmedia.addBreakPoint('mobile', 480);
     window.jmedia.addBreakPoint('tablet', 800);
 
+    var $footerDate = document.getElementById('footer-date');
+    $footerDate.innerText = new Date().getFullYear();
+
     // set the selected link
     $("#main-nav a").each(function() {
         var $this = $(this);
